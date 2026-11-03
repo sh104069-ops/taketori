@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="竹取物語">
+  <meta name="theme-color" content="#1d2b53">
+  <title>竹取物語を よもう｜国語 学習アプリ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="size-m">
+  <header class="app-header no-print">
+    <button id="btnHome" class="hbtn" type="button">🏠 ホーム</button>
+    <h1 class="app-title">🌕 竹取物語を よもう</h1>
+    <div class="hright">
+      <span id="studentBadge" class="badge"></span>
+      <button id="btnRecord" class="hbtn" type="button">📒 きろく</button>
+      <button id="btnSettings" class="hbtn" type="button" aria-label="せってい">⚙️</button>
+    </div>
+  </header>
 
+  <main id="app" class="no-print"></main>
+
+  <!-- 印刷用エリア（画面には表示されません） -->
+  <div id="printArea" class="print-only"></div>
+
+  <div id="modal" class="modal hidden no-print" role="dialog" aria-modal="true">
+    <div class="modal-box" id="modalBox"></div>
+  </div>
+  <div id="toast" class="toast no-print"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
